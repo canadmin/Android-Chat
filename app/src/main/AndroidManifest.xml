@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.canyard.anketprogrami">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PmApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/loginActivityTheme">
+        <activity android:name=".Activitys.MainActivity">
+            <intent-filter>
+                >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activitys.AyarlarActivity" />
+        <activity android:name=".Activitys.AppActivity" />
+        <activity android:name=".Activitys.NavigationActivity" />
+        <activity android:name=".Activitys.ProfilActivity" />
+        <activity
+            android:name=".Activitys.ChatActivity"
+            android:parentActivityName=".Activitys.AppActivity" />
+        <activity android:name=".Activitys.KayitActivity" />
+        <activity
+            android:name=".Activitys.KullanicilarActivity"
+            android:parentActivityName=".Activitys.AppActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Activitys.UserProfile" android:parentActivityName=".Activitys.AppActivity"></activity>
+    </application>
+
+</manifest>

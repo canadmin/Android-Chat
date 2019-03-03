@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AyarlarActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        style="@style/Animation.AppCompat.DropDownUp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/profileLineer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circle"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:id="@+id/img1"
+                    android:tint="@color/white"
+                     />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="icanyard@gmail.com" />
+
+
+
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_below="@id/profileLineer"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/prl1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/username_profile"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:background="@color/edittextBG"
+                    android:textAlignment="center"
+
+                    android:hint="Ad Soyad"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:backgroundTint="@color/colorPrimaryDark"
+
+                    android:layout_toRightOf="@id/username_profile"
+                    android:background="@drawable/ic_check_black_24dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@id/prl1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/prl12"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/req_eposta"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:background="@color/edittextBG"
+                    android:hint="Erişim Kodu"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:background="@drawable/ic_check_black_24dp"
+                    android:layout_toRightOf="@id/req_eposta"
+                    />
+
+            </RelativeLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="Geri Dön"
+                android:layout_below="@id/prl12"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

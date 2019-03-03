@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#345D7E</color>
+    <color name="colorPrimaryDark">#F27281</color>
+    <color name="colorAccent">#F8B195</color>
+    <color name="facebookblue">#3F5996</color>
+    <color name="twitterblue">#29C5F6</color>
+    <color name="googlered">#D03E2F</color>
+    <color name="tooltitlecolor">#fffc50</color>
+    <color name="karsitprimary">#5c6378</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#000000</color>
+    <color name="edittextBG">#685b634d</color>
+    <color name="colortext">#262626</color>
+    <color name="primary2">#8fc0ff</color>
+    <color name="colorPrimaryDark2">#7f6ccef7</color>
+
+    <color name="deneme">#35437c</color>
+    <color name="arkdaslarilistele">#FF008080</color>
+    <color name="chatgoster">#fffaf6</color>
+
+
+</resources>

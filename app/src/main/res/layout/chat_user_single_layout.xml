@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:id="@+id/chattikla"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/chatgoster"
+
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/chatgoster"
+            android:padding="5dp"
+
+
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_single_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/person"
+                android:clickable="true"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/chat_single_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/chat_single_image"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/baloo_thambi"
+
+                android:layout_marginStart="8dp"
+                android:text="display name"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/colortext"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/chat_single_image"
+                app:layout_constraintTop_toTopOf="@+id/chat_single_image" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:fontFamily="@font/baloo_thambi"
+
+                android:layout_marginEnd="8dp"
+                android:text="Mesaj Yollamak için tıkla"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/chat_single_image"
+                app:layout_constraintTop_toBottomOf="@+id/chat_single_name" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

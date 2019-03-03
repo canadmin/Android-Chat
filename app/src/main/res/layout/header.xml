@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/main_header_selector"
+    android:padding="20dp"
+    android:layout_centerHorizontal="true"
+
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/main_photo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:background="@drawable/person" />
+
+    <TextView
+        android:id="@+id/main_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="icanyard@gmail.com
+" />
+    <TextView
+        android:id="@+id/adSoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Can yardımcı" />
+
+
+</LinearLayout>

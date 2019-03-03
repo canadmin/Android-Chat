@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.KullanicilarActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:id="@+id/asdfa"
+        android:layout_height="50dp" />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/karsitprimary"
+        >
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/arancak_erisim"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/arama_edittext"
+            android:paddingLeft="5dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/erisimara"
+            android:hint="Ara" />
+
+        <ImageButton
+            android:id="@+id/erisimara"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="41dp"
+            android:background="@color/edittextBG"
+            android:src="@drawable/ic_search_black_24dp"
+            android:text="Button" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_recyler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
